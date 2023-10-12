@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 @Service
 @RequiredArgsConstructor
@@ -20,8 +21,7 @@ public class UserServiceImpl implements UserService {
         User user=new User();
         if(userPojo.getId()!=null){
             user=userRepository.findById(userPojo.getId())
-                    .orElseThrow(() -> new UserNotFoundException("User not found"));
-
+                    .orElseThrow(()-> new NoSuchElementException("No data found"));
         }
         System.out.println(userPojo);
         user.setId(userPojo.getId());
