@@ -1,4 +1,2 @@
-package com.example.demo.Repository;
-
-public class ItemRepository {
+package com.example.demo.Repository;public interface ItemRepository {
 }
