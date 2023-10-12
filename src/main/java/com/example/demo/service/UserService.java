@@ -10,5 +10,5 @@ public interface UserService {
     void SaveUser(UserPojo userpojo);
     List<User> getAllData();
     Optional<User> getById(Integer id);
-    void deleteById(Integer id);
+
 }

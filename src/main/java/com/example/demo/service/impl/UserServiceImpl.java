@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -36,4 +37,10 @@ public class UserServiceImpl implements UserService {
     public List<User> getAllData() {
         return userRepository.findAll();
     }
+
+    @Override
+    public Optional<User> getById(Integer id) {
+        return userRepository.findById(id);
+    }
+
 }
