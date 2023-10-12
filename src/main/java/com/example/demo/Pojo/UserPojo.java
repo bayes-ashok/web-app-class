@@ -1,8 +1,6 @@
-package com.example.demo.userPojo;
+package com.example.demo.Pojo;
 
 
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;

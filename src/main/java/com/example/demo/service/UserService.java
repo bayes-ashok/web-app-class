@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
 import com.example.demo.entity.User;
-import com.example.demo.userPojo.UserPojo;
+import com.example.demo.Pojo.UserPojo;
 
 import java.util.List;
 import java.util.Optional;

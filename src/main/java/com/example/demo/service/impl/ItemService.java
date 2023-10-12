@@ -1,2 +1,4 @@
-package com.example.demo.service.impl;public class ItemService {
+package com.example.demo.service.impl;
+
+public class ItemService {
 }
