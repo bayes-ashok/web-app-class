@@ -11,4 +11,5 @@ public interface UserService {
     List<User> getAllData();
     Optional<User> getById(Integer id);
 
+    void deleteById(Integer id);
 }
